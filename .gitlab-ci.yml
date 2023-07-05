@@ -1,0 +1,22 @@
+image: maven:latest
+stages:
+  - test
+  - report
+
+test:
+  stage: test
+  script:
+    - mvn clean test -Denv=uat
+  artifacts:
+    paths:
+      - target/surefire-reports
+
+report:
+  stage: report
+  script:
+    - mvn allure:report
+  artifacts:
+    paths:
+      - target/site/allure-maven-plugin
+  dependencies:
+    - test

@@ -1,9 +1,5 @@
 # PROJETO DESAFIO SICREDI TESTE API
 
-## BUGS ENCONTRADOS
-
-https://gitlab.com/jgilbertoqa/automacao-desafio-sicredi-apis/-/issues
-
 ## PRÉ-REQUISITOS
 
 Requisitos de software e hardware necessários para executar este projeto de automação
